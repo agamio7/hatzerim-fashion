@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שאלות ותשובות - אופנת חצרים</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+        }
+
+        details {
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+
+        details:hover {
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        details[open] {
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+        }
+
+        summary {
+            padding: 18px 24px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #aaa;
+            transition: transform 0.25s ease;
+            flex-shrink: 0;
+            margin-right: 16px;
+        }
+
+        details[open] summary::after {
+            content: '−';
+            color: #3498db;
+        }
+
+        summary:hover {
+            color: #3498db;
+        }
+
+        .answer {
+            padding: 0 24px 20px 24px;
+            color: #555;
+            font-size: 1rem;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 14px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            summary {
+                font-size: 1rem;
+                padding: 15px 18px;
+            }
+
+            .answer {
+                padding: 0 18px 16px 18px;
+                padding-top: 14px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>שאלות ותשובות</h1>
+        <p class="subtitle">אופנת חצרים - חנות פופ-אפ</p>
+
+        <details>
+            <summary>מה זה חנות פופ-אפ?</summary>
+            <div class="answer">מדובר בחנות אשר נפתחת לזמן מוגבל ונסגרת בתום פרק הזמן הזה לצמיתות. לכן הפריטים הם מהדורה מוגבלת ויתאפשר לרכוש אותם רק בפרק הזמן הזה.</div>
+        </details>
+
+        <details>
+            <summary>לכמה זמן החנות תהיה פתוחה?</summary>
+            <div class="answer">למשך שבועיים בלבד.</div>
+        </details>
+
+        <details>
+            <summary>מי עיצב את החולצות?</summary>
+            <div class="answer">אורי וזהר בן סימון בליווי אורן ברק יחזקאל.</div>
+        </details>
+
+        <details>
+            <summary>איך מתבצע התשלום?</summary>
+            <div class="answer">באמצעות כרטיס אשראי בלבד דרך האתר. לא יתאפשר לבצע תשלום דרך תקציב אישי.</div>
+        </details>
+
+        <details>
+            <summary>כמה עולה משלוח?</summary>
+            <div class="answer">חולצות עבור חברי חצרים יגיעו במרוכז לחצרים במשלוח חינם. בני משק שלא גרים בחצרים יוכלו לרכוש דרך האתר ולהזמין לכל מקום בארץ בתשלום. יש לשים לב שגם עבורם ההזמנות בחנות נסגרות תוך שבועיים.</div>
+        </details>
+
+        <details>
+            <summary>גם מי שלא גר בחצרים יכול לקנות?</summary>
+            <div class="answer">כמובן. ניתן לבחור משלוח בתשלום לכל כתובת בארץ או לבחור משלוח שיגיעו לקיבוץ ללא תשלום (ולנצל הזדמנות לבקר במולדת).</div>
+        </details>
+
+        <details>
+            <summary>מתי המשלוח יגיע?</summary>
+            <div class="answer">To be added</div>
+        </details>
+
+        <details>
+            <summary>האם יש חולצה חינם לשנת ה-80 לחצרים?</summary>
+            <div class="answer">כן. המשלוח יגיע במרוכז לחצרים ויהיה פרסום בנוגע ליום החלוקה החגיגי.</div>
+        </details>
+
+        <details>
+            <summary>אפשר להחזיר או להחליף?</summary>
+            <div class="answer">לא תהיה אפשרות להחזיר או להחליף מאחר והמוצרים מיוצרים לפי הזמנה.</div>
+        </details>
+
+        <details>
+            <summary>איזה מידה כדאי לי להזמין?</summary>
+            <div class="answer">שים לב לטבלאות המידות המצורפות לכל פריט. מומלץ מאוד למדוד בבית חולצה קיימת כדי להשוות לטבלת המידות. כל החולצות מתאימות לגברים ולנשים (יוניסקס).</div>
+        </details>
+
+        <details>
+            <summary>מה ההבדל בין טי-שירט לחולצת אוברסייז?</summary>
+            <div class="answer">חולצת אוברסייז מציעה גיזרה שונה, תפר הכתף נמוך יותר והחולצה עצמה יותר מרווחת וקצת יותר מרובעת ולכן יושבת על הגוף בצורה אחרת. בנוסף עשויה מבד יותר עבה אבל לא מחמם מידי.</div>
+        </details>
+
+        <details>
+            <summary>יש גם לילדים ותינוקות?</summary>
+            <div class="answer">כן, לילדים יש כמה פריטים. לתינוקות יש בגד גוף קצר במגוון מידות.</div>
+        </details>
+
+        <details>
+            <summary>למה כתוב שהמלאי אזל?</summary>
+            <div class="answer">כאשר לא קיימת חולצה במידה או בצבע המבוקש יהיה כתוב שהמלאי אזל. זה לא אומר שהמלאי נגמר אלא שהאופציה הנבחרת לא קיימת.</div>
+        </details>
+
+        <details>
+            <summary>האם הצבעים שבאתר יראו ככה גם במציאות?</summary>
+            <div class="answer">הצבעים באתר הם להמחשה בלבד, ועלולים להיות מעט שונים במציאות.</div>
+        </details>
+
+        <details>
+            <summary>מי יכול לעזור לי בביצוע הקנייה?</summary>
+            <div class="answer">ניתן לפנות לאורן יחזקאל לעזרה בביצוע ההזמנה.</div>
+        </details>
+    </div>
+</body>
+</html>
